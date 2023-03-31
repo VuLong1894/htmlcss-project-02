@@ -1,3 +1,101 @@
 * {
     box-sizing: border-box;
 }
+
+:root {
+    --second-font: "Sen", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+/* Start Common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100%- 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 50px;
+    min-width: 118px;
+    color: #ffffff;
+    text-align: center;
+    background: #171100;
+    border-radius: 24.5px;
+}
+/* End Common */
+
+/* Start Styles */
+.header {
+    background-color: #fffcf4;
+}
+.fixed {
+    position: sticky;
+    top: -24px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+}
+.nav a:hover,
+.nav li.active a {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    left: 21px;
+    bottom: 6px;
+}
+
+.header .body .actions {
+    margin-left: 49px;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
+}
