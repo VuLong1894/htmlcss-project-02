@@ -5,6 +5,7 @@
 :root {
     --second-font: "Sen", sans-serif;
     --primary-color: #ffb900;
+    --second-color: #2e2100;
 }
 
 html {
@@ -407,4 +408,77 @@ a:hover {
 
 .popular .foot .book-btn:hover {
     background: var(--primary-color);
+}
+
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background-color: var(--second-color);
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.feedback-item .avatar {
+    object-fit: cover;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.feedback-item .info .title {
+    margin-top: 18px;
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background: var(--primary-color);
+    cursor: default;
+}
+
+.feedback .content {
+    width: 65.8%;
+    margin-left: 241px;
+}
+
+.feedback blockquote {
+    font-style: italic;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+    padding-left: 30px;
 }
